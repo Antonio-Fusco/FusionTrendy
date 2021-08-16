@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/22df137758.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="Immagini/LogoIconWhite.ico"
+    />
+    <title>FusionTrendy</title>
+  </head>
+  <body>
+    <!-- Top bar -->
+    <header class="sticky">
+      <div class="top">
+        <img id="logo" src="/Immagini/nuovoLogo.jpg" alt="" />
+        <div class="links">
+          <a href="#" id="outlet">OUTLET</a>
+          <a href="#">DONNA</a>
+          <a href="#">UOMO</a>
+          <a href="#">BAMBINO</a>
+        </div>
+        <div class="access-container">
+          <div class="access">
+            <a href="#">ABOUT US</a>
+            <a href="#">AIUTO E CONTATTI</a>
+            <a href="admin-index.html" id="login">ACCESSO & REGISTRAZIONE</a>
+          </div>
+          <input
+            type="text"
+            placeholder="Search..."
+            id="searchbar"
+            class="textinput"
+          />
+          <img src="Immagini/search_icon.ico" id="searchicon" alt="" />
+          <img id="bag" class="bags" src="/Immagini/ccc.ico" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Slider -->
+      <div class="slider">
+        <img class="mySlides" src="Immagini/Banner1.jpg" />
+        <img class="mySlides" src="Immagini/Banner2.jpg" />
+        <img class="mySlides" src="Immagini/Banner3.jpg" />
+        <div class="slider-commands">
+          <div class="left">&#10094;</div>
+          <div class="dot-container">
+            <span class="dots" idx="0"></span>
+            <span class="dots" idx="1"></span>
+            <span class="dots" idx="2"></span>
+          </div>
+          <div class="right">&#10095;</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-section">
+          <div class="offer-grid">
+            <div class="offer-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="Immagini/offerta_scaffholding1.jpg" />
+                <img class="pic-2" src="Immagini/offerta_scaffholding2.jpg" />
+              </a>
+              <ul class="offer-links">
+                <li>
+                  <a href="" data-tip="Add to Cart"
+                    ><i class="fa fa-shopping-bag"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="offer-content">
+              <h3 class="title"><a href="#">Camicia Azzurra</a></h3>
+              <div class="price">
+                <span class="discounted"><del>$120</del></span>
+                $60
+              </div>
+            </div>
+          </div>
+          <div class="offer-grid">
+            <div class="offer-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="Immagini/offerta_scaffholding1.jpg" />
+                <img class="pic-2" src="Immagini/offerta_scaffholding2.jpg" />
+              </a>
+              <ul class="offer-links">
+                <li>
+                  <a href="" data-tip="Add to Cart"
+                    ><i class="fa fa-shopping-bag"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="offer-content">
+              <h3 class="title"><a href="#">Men's Blazer</a></h3>
+              <div class="price">$93.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="center-section">
+          <div class="center-heading">
+            <h4>I NOSTRI BESTSELLER</h4>
+          </div>
+          <div class="center-offers">
+            <div class="product-row">
+              <div class="offer-grid product-grid">
+                <div class="offer-image product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="Immagini/offerta_scaffholding1.jpg"
+                    />
+                    <img
+                      class="pic-2"
+                      src="Immagini/offerta_scaffholding2.jpg"
+                    />
+                  </a>
+                  <ul class="offer-links product-links">
+                    <li>
+                      <a href="" data-tip="Add to Cart"
+                        ><i class="fa fa-shopping-bag"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offer-content">
+                  <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                  <div class="price">$93.00</div>
+                </div>
+              </div>
+              <div class="offer-grid product-grid">
+                <div class="offer-image product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="Immagini/offerta_scaffholding1.jpg"
+                    />
+                    <img
+                      class="pic-2"
+                      src="Immagini/offerta_scaffholding2.jpg"
+                    />
+                  </a>
+                  <ul class="offer-links product-links">
+                    <li>
+                      <a href="" data-tip="Add to Cart"
+                        ><i class="fa fa-shopping-bag"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offer-content">
+                  <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                  <div class="price">$93.00</div>
+                </div>
+              </div>
+              <div class="offer-grid product-grid">
+                <div class="offer-image product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="Immagini/offerta_scaffholding1.jpg"
+                    />
+                    <img
+                      class="pic-2"
+                      src="Immagini/offerta_scaffholding2.jpg"
+                    />
+                  </a>
+                  <ul class="offer-links product-links">
+                    <li>
+                      <a href="" data-tip="Add to Cart"
+                        ><i class="fa fa-shopping-bag"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offer-content">
+                  <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                  <div class="price">$93.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-row">
+              <div class="offer-grid product-grid">
+                <div class="offer-image product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="Immagini/offerta_scaffholding1.jpg"
+                    />
+                    <img
+                      class="pic-2"
+                      src="Immagini/offerta_scaffholding2.jpg"
+                    />
+                  </a>
+                  <ul class="offer-links product-links">
+                    <li>
+                      <a href="" data-tip="Add to Cart"
+                        ><i class="fa fa-shopping-bag"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offer-content">
+                  <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                  <div class="price">$93.00</div>
+                </div>
+              </div>
+              <div class="offer-grid product-grid">
+                <div class="offer-image product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="Immagini/offerta_scaffholding1.jpg"
+                    />
+                    <img
+                      class="pic-2"
+                      src="Immagini/offerta_scaffholding2.jpg"
+                    />
+                  </a>
+                  <ul class="offer-links product-links">
+                    <li>
+                      <a href="" data-tip="Add to Cart"
+                        ><i class="fa fa-shopping-bag"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offer-content">
+                  <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                  <div class="price">$93.00</div>
+                </div>
+              </div>
+              <div class="offer-grid product-grid">
+                <div class="offer-image product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="Immagini/offerta_scaffholding1.jpg"
+                    />
+                    <img
+                      class="pic-2"
+                      src="Immagini/offerta_scaffholding2.jpg"
+                    />
+                  </a>
+                  <ul class="offer-links product-links">
+                    <li>
+                      <a href="" data-tip="Add to Cart"
+                        ><i class="fa fa-shopping-bag"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offer-content">
+                  <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                  <div class="price">$93.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="offer-grid">
+            <div class="offer-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="Immagini/offerta_scaffholding1.jpg" />
+                <img class="pic-2" src="Immagini/offerta_scaffholding2.jpg" />
+              </a>
+              <ul class="offer-links">
+                <li>
+                  <a href="" data-tip="Add to Cart"
+                    ><i class="fa fa-shopping-bag"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="offer-content">
+              <h3 class="title"><a href="#">Camicia Azzurra</a></h3>
+              <div class="price">$93.00</div>
+            </div>
+          </div>
+          <div class="offer-grid">
+            <div class="offer-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="Immagini/offerta_scaffholding1.jpg" />
+                <img class="pic-2" src="Immagini/offerta_scaffholding2.jpg" />
+              </a>
+              <ul class="offer-links">
+                <li>
+                  <a href="" data-tip="Add to Cart"
+                    ><i class="fa fa-shopping-bag"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="offer-content">
+              <h3 class="title"><a href="#">Men's Blazer</a></h3>
+              <div class="price">$93.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#">Privacy Policy</a>
+    </footer>
+  </body>
+</html>

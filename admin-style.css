@@ -1,0 +1,372 @@
+@font-face {
+  font-family: Verlag;
+  src: url("Verlag-Book.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: 100% Verlag;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  box-shadow: 4px 4px 4px #ccc;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  height: 10vw;
+  max-height: 80px;
+  border-bottom: solid 8px #fdd3c7;
+}
+
+.person {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 1vw;
+  background-color: #fff;
+  font-size: 4vw;
+  color: #000;
+  cursor: pointer;
+}
+
+.dropbutton {
+  font-size: 3.5vw;
+  margin-left: 0.1vw;
+  padding: 0.5vw;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+}
+
+.dropdown {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0.1vw;
+  width: fit-content;
+}
+
+.personal {
+  left: 1vw;
+}
+
+.dropdown-content button {
+  width: 20vw;
+  max-width: 200px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0vw;
+  margin: 0.5vw;
+  padding: 0.8vw;
+  box-shadow: 4px 4px 4px #e0b1a4bb;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbutton {
+  background-color: #fdd3c7;
+  color: #fff;
+}
+
+.dropdown:hover .person {
+  background-color: #fdd3c7;
+  padding-bottom: 0.4vw;
+  color: #fff;
+}
+.dropdown:hover .dropdown-content {
+  /*hover*/
+  display: flex;
+  flex-direction: column;
+  background-color: #fdd3c7;
+  padding: 1vw;
+  border-radius: 0vw;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff8ad;
+  box-shadow: 4px 5px 5px #ccc;
+}
+
+.controls button,
+.offer-column button {
+  margin: 1vw;
+  padding: 0.3vw;
+  background-color: #fdd3c7;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(204, 204, 204, 0.2);
+}
+
+/* main */
+main {
+}
+.grid {
+  position: absolute;
+  top: 11.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  width: 90vw;
+  z-index: 0;
+}
+.product {
+  width: min-content;
+  max-width: 25vw;
+  margin: auto;
+  margin-top: 2vw;
+  padding: 0.5vw;
+  /* padding-left: 0.8vw; */
+  padding-bottom: 1vw;
+  background-color: #46d9cd;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.product img {
+  margin: auto;
+  padding: auto;
+}
+.product-text {
+  display: block;
+  max-width: 80%;
+  margin: 0%;
+  font-size: 1.2vw;
+}
+
+.detail {
+  width: 100%;
+  margin: auto;
+  margin-top: 1vw;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detail * {
+  width: 40%;
+}
+
+.edit,
+.delete,
+.select {
+  position: relative;
+  left: 85%;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.select {
+  left: 105%;
+}
+
+.product-text .select {
+  display: none;
+  align-self: center;
+  width: 1.3vw;
+  height: 1.3vw;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.product img {
+  margin: auto;
+  width: 10vw;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  background-color: #fdd3c7;
+  box-shadow: 5px 5px 10px rgb(139, 133, 133);
+}
+
+.modal-content {
+  width: 95%;
+  margin: 0.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modal .close {
+  position: fixed;
+  margin: 0.2vw;
+  top: 0%;
+  right: 0%;
+  cursor: pointer;
+}
+
+.input-column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 1vw;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.button-column button {
+  width: 90%;
+}
+
+.modal button {
+  border: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 0vw;
+  margin: 0.8vw;
+  padding: 0.8vw;
+  box-shadow: 4px 4px 4px #e0b1a4bb;
+  cursor: pointer;
+}
+
+.detail button {
+  width: 60%;
+}
+.input-column label {
+  display: block;
+  margin: auto;
+  margin-top: 0.8vw;
+}
+
+.input-column input {
+  width: 70%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: #fff8ad;
+  color: #000;
+  text-align: center;
+  padding: 0.5vw;
+  /* Position the tooltip */
+  position: absolute;
+  left: 49%;
+  top: -50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.tooltip:nth-child(1) .tooltiptext {
+  top: -70%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.offer-column,
+.category-column {
+  position: fixed;
+  top: 11.5vw;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-content: space-between;
+  width: 20vw;
+  height: 100%;
+  text-align: center;
+}
+
+.offer-column {
+  left: 80%;
+  border-left: solid 8px #fff8ad;
+  box-shadow: -5px 5px 5px #ccc;
+}
+
+.offer-column * {
+  margin: 4% 6% 0% 6%;
+}
+
+.category-column {
+  left: 0%;
+  background-color: white;
+  border-right: solid 8px #fff8ad;
+  box-shadow: 5px 5px 5px #ccc;
+  overflow: scroll;
+}
+
+.category-column button {
+  background-color: #fdd3c7;
+  border: none;
+  padding: 0.8vw;
+  color: #fff;
+  margin: 6%;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a16f62;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdd3c7;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #46d9cd;
+}

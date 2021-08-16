@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admin-style.css" />
+    <title>FusionTrendy</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="Immagini/LogoIconWhite.ico"
+    />
+    <script
+      src="https://kit.fontawesome.com/22df137758.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="admin-main.js"></script>
+    <script src="function-library.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="dropdown">
+          <span class="material-icons-round person"> person </span>
+          <div class="dropdown-content personal">
+            <button>Cambio Password</button>
+            <button>Logout</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <span class="material-icons-round dropbutton"> view_list </span>
+          <div class="dropdown-content">
+            <button id="catalogo">Gestione Catalogo</button>
+            <button id="offerte">Gestione Offerte</button>
+            <button id="categorie">Gestione Categorie</button>
+            <button id="promozioni">Gestione Promozioni</button>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="nuovo-prodotto">Nuovo Prodotto</button>
+        <button class="selezione-prodotti">Selezione Elementi</button>
+      </div>
+    </header>
+    <main>
+      <div class="category-column">
+        <button id="all-categories">Tutte le categorie</button>
+      </div>
+      <div class="grid">
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+        <div class="product">
+          <a href="">
+            <img src="Immagini/offerta_scaffholding1.jpg" alt=""
+          /></a>
+          <div class="product-text">
+            <p>Nome prodotto</p>
+            <span class="material-icons-round edit"> edit </span>
+            <span class="material-icons-round delete"> delete </span>
+            <input type="checkbox" class="select" id="" />
+          </div>
+        </div>
+      </div>
+      <div class="offer-column">
+        <p class="selection-counter">Sono stati selezionati 0 prodotti</p>
+        <label for="discount">Inserire sconto percentuale %</label>
+        <input type="number" name="" id="discount" />
+        <button id="discount-button">Applica Sconto</button>
+      </div>
+      <!-- Finestra modale -->
+      <div class="modal">
+        <span class="material-icons-round close"> close </span>
+        <div class="modal-content"></div>
+      </div>
+    </main>
+  </body>
+</html>
