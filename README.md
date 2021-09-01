@@ -4,5 +4,6 @@ My team and I played the role of implementing a CMS (Content Management System) 
 and removing products, categories and discount strategies.
 
 My tasks involved:
+- elaborating documentation of ORM methods for DAO classes
 - refactoring DAO classes
 - managing login / sign up both back-end and front-end sides
