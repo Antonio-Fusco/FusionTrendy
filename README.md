@@ -8,4 +8,5 @@ FusionTrendy is a team project of the final 3-months course as Junior Java Devel
 - HTML 
 - CSS
 - JQuery
+- Eclipse, Visual Studio Code
 - Canva, Beautiful.io
